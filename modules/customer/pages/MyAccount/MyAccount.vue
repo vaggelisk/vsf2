@@ -59,6 +59,7 @@ import {
   useRoute,
   computed,
   useFetch,
+  onMounted,
 } from '@nuxtjs/composition-api';
 import { useSidebarLinkGroups } from './useSidebarLinkGroups';
 import { useUser } from '../../composables/useUser';
@@ -97,6 +98,10 @@ export default defineComponent({
     };
 
     const getHandler = (id: string) => handlers[id] ?? {};
+
+    onMounted(() => {
+      console.log(sidebarLinkGroups)
+    })
 
     return {
       sidebarLinkGroups,

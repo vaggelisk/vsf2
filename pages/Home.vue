@@ -1,5 +1,10 @@
 <template>
   <div id="home">
+    <h2 class="title-dev-trial-section">Death to Society of Repression and Sexism</h2>
+    <HTMLContent
+      v-if="page2 && page2.content"
+      :content="page2.content"
+    />
     <HeroSection
       class="hero-section"
       :title="hero.title"
@@ -78,8 +83,10 @@ import { SfBanner, SfBannerGrid } from '@storefront-ui/vue';
 import { CmsPage } from '~/modules/GraphQL/types';
 import HeroSection from '~/components/HeroSection.vue';
 import { getMetaInfo } from '~/helpers/getMetaInfo';
-import { useContent } from '~/composables';
+import { useContent, useProduct } from '~/composables';
 import LoadWhenVisible from '~/components/utils/LoadWhenVisible.vue';
+import HTMLContent from '~/components/HTMLContent.vue';
+
 
 export default defineComponent({
   name: 'HomePage',
@@ -87,6 +94,7 @@ export default defineComponent({
     HeroSection,
     LazyHydrate,
     LoadWhenVisible,
+    HTMLContent,
     SfBanner,
     SfBannerGrid,
     CallToAction: () => import(/* webpackPrefetch: true */ '~/components/CallToAction.vue'),
@@ -102,7 +110,10 @@ export default defineComponent({
     const year = new Date().getFullYear();
     const { isDesktop } = app.$device;
 
+    // const { products: customProducts, search: customSearch } = useProduct('custom-products');
+
     const page = ref<CmsPage | null>(null);
+    const page2 = ref<CmsPage | null>(null);
     const hero = ref({
       title: app.i18n.t('Colorful summer dresses are already in store'),
       subtitle: app.i18n.t('SUMMER COLLECTION {year}', { year }),
@@ -202,10 +213,14 @@ export default defineComponent({
 
     useFetch(async () => {
       page.value = await loadPage({ identifier: 'home' });
+      page2.value = await loadPage( { identifier: 'about-us'})
     });
 
-    onMounted(() => {
+    onMounted( async () => {
       addTags([{ prefix: CacheTagPrefix.View, value: 'home' }]);
+      // await customSearch({ customQuery: { products: 'my-first-custom-query' } })
+      console.log('vaggelis')
+
     });
 
     // @ts-ignore
@@ -214,6 +229,7 @@ export default defineComponent({
       callToAction,
       hero,
       page,
+      page2,
     };
   },
   head() {
@@ -252,6 +268,11 @@ export default defineComponent({
     padding: 0;
     margin: 0 auto;
   }
+}
+
+.title-dev-trial-section {
+  background-color: black;
+  color: red;
 }
 
 .hero-section {

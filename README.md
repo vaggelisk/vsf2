@@ -12,9 +12,10 @@ If you don't want to contribute to VSF git folder, use this one.
 
 ### Build Setup
 
-``` bash
+open a terminal (Ctrl+Alt+T)
+and go to the folder WebstormProjects and type
 
-# go to the folder WebstormProjects and type
+```bash
 
 $ git clone https://github.com/vaggelisk/vsf2
 
@@ -24,26 +25,45 @@ $ cd vsf2
 
 $ nvm use 16
 
-# if you don't have nvm, it's very easy to install via googleSearch abd type again
-
-$ nvm use 16
-
-# install dependencies
-
-$ npx yarn install
-
-$ npx yarn build
-
-# serve with hot reload at localhost:3050
-$ npx yarn dev  # or npx yarn run dev
-
-# build for production and launch server
-$ npx yarn build
-$ npx yarn start
-
-# generate static project
-$ npx yarn generate
 ```
+ if you don't have nvm, it's very easy to install via googleSearch
+or looking [here](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) and type again
+
+
+
+> nvm use 16
+
+### install dependencies
+
+> npx yarn install
+
+> npx yarn build
+
+### serve with hot reload at localhost:3050
+> npx yarn dev  # or npx yarn run dev
+
+open a browser(chrome, firefox etc) at http://localhost:3050/
+
+### starting development
+
+go to the file pages/Home.vue and at line 3 write this:
+
+    <h2>Death to Society of Repression and Spectacle</h2>
+
+and then go again to the browser and look youn can see your first code line...!
+
+Go again to the above specific file and change Spectacle to Sexism and go
+to the browser to see your change, to see your development...
+
+
+
+
+### build for production and launch server. Not interesting for new developers
+> npx yarn build
+> npx yarn start
+
+### generate static project
+> npx yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
