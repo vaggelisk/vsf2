@@ -3,27 +3,29 @@
 </div>
 
 
-This project and the **vsf2ForContributing** are the same. The only difference is
-the structure and the existence of the docs in the other.
+If you don't have `git` -the most important tool of the
+programming-, needs to go to the previous page
 
-If you don't want to contribute to VSF git folder, use this one.
+If you don't have `webstorm editor` -the second most important
+tool of the programming-, needs to go even 2 previous page.
+
+If you have the above
 
 
-
-### Build Setup
+## Setup the project
 
 open a terminal (Ctrl+Alt+T)
 and go to the folder WebstormProjects and type
 
 ```bash
 
-$ git clone https://github.com/vaggelisk/vsf2.git
+git clone https://github.com/vaggelisk/vsf2.git
 
-$ cd vsf2
+cd vsf2
 
 # choose the version of node
 
-$ nvm use 16
+nvm use 16
 
 ```
  if you don't have nvm, it's very easy to install via googleSearch
@@ -33,18 +35,18 @@ or looking [here](https://www.freecodecamp.org/news/node-version-manager-nvm-ins
 
 > nvm use 16
 
-### install dependencies
+#### install dependencies
 
 > npx yarn install
 
 > npx yarn build
 
-### serve with hot reload at localhost:3050
+#### serve with hot reload at localhost:3050
 > npx yarn dev
 
 open a browser(chrome, firefox etc) at http://localhost:3050/
 
-### starting development
+## starting development
 
 go to the file pages/Home.vue and at line 3 write this:
 
@@ -58,11 +60,13 @@ to the browser to see your change, to see your development...
 
 
 
-### build for production and launch server. Not interesting for new developers
+## build and serve for production
+#### (not interesting for new developers)
 > npx yarn build
+
 > npx yarn start
 
-### generate static project
+#### generate static project
 > npx yarn generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
