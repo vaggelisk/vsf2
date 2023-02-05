@@ -25,7 +25,7 @@ When you arrive at `Licences Screen`,
 
 you have to select `License Server`
 
-on `Server Address` put the value `http://147.102.124.19:64001` and then
+on `Server Address` put the value `http://147.<message_me_on_discord>` and then
 click `Activate`
 
 and everything is OK.
@@ -55,7 +55,7 @@ When you arrive at `Licences Screen`,
 
 you have to select `License Server`
 
-on `Server Address` put the value `http://147.<message me on discord>` and then
+on `Server Address` put the value `http://147.<message_me_on_discord>` and then
 click `Activate`
 
 and everything is OK.
