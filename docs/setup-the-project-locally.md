@@ -44,7 +44,7 @@ or looking [here](https://www.freecodecamp.org/news/node-version-manager-nvm-ins
 #### serve with hot reload at localhost:3050
 > npx yarn dev
 
-open a browser(chrome, firefox etc) at http://localhost:3050/
+open a browser(chrome, firefox etc) at [http://localhost:3050/](https://www.jetbrains.com/webstorm/)
 
 ## starting development
 

@@ -7,7 +7,7 @@
 
 Download the Webstorm Editor (normally must-pay, but we have crack)
 
-https://www.jetbrains.com/webstorm/
+[https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
 
 For starting Webstorm
 
@@ -40,13 +40,13 @@ ig you go to `Help-->Register`
 
 First download a `git bash` which is a console very similar to `Linux bash`
 
-You can find how to do it here: https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows
+You can find how to do it here: [https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows](https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows)
 
 
 
 Download the Webstorm Editor (normally must-pay, but we have crack)
 
-https://www.jetbrains.com/webstorm/
+[https://www.jetbrains.com/webstorm/](https://www.jetbrains.com/webstorm/)
 
 For starting Webstorm, you have to find the .exe file.
 

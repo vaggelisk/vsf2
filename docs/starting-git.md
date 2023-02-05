@@ -4,7 +4,7 @@
 
 ## Register at GitHub
 
-Register/signup at https://github.com/signup
+Register/signup at [https://github.com/signup](https://www.jetbrains.com/webstorm/)
 
 
 ## Generate a token
@@ -42,7 +42,7 @@ First when you need to save your changes and clean your branch from changes, you
 
 And to bring back the saved changes
 
-> git stash top
+> git stash pop
 
 but the best on these commands is that in reality you move your changes from one branch to another.
 
