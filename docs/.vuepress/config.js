@@ -79,10 +79,10 @@ module.exports = {
         collapsable: true,
         children: [
           ['/', 'Introduction'],
-          ['/starting-webstorm-editor', 'Starting with Webstorm Editor'],
-          ['/starting-git', 'Starting with git'],
-          ['/setup-the-project-locally', 'Setup the Project locally'],
-          ['/contributing-via-git', 'Contributing to the collective Project (git)'],
+          ['/starting-point/starting-webstorm-editor', 'Starting with Webstorm Editor'],
+          ['/starting-point/starting-git', 'Starting with git'],
+          ['/starting-point/setup-the-project-locally', 'Setup the Project locally'],
+          ['/starting-point/contributing-via-git', 'Contributing to the collective Project (git)'],
         ],
       },
       {

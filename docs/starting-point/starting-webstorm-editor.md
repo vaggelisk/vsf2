@@ -21,7 +21,7 @@ downloaded tar of Webstorm Editor
 ``./bin/webstorm.sh``
 
 When you arrive at `Licences Screen`,
-<img height="300" width="600" src="./assets/images/webstorm-licence.png" />
+<img height="300" width="600" src="../assets/images/webstorm-licence.png" />
 
 you have to select `License Server`
 
@@ -51,7 +51,7 @@ Download the Webstorm Editor (normally must-pay, but we have crack)
 For starting Webstorm, you have to find the .exe file.
 
 When you arrive at `Licences Screen`,
-<img height="300" width="600" src="./assets/images/webstorm-licence.png" />
+<img height="300" width="600" src="../assets/images/webstorm-licence.png" />
 
 you have to select `License Server`
 

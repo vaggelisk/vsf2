@@ -35,6 +35,56 @@ or looking [here](https://www.freecodecamp.org/news/node-version-manager-nvm-ins
 
 > nvm use 16
 
+#### make the file `.env`
+
+this is an important file that make the app to commute
+with the back-end part of the platform. So on `<project_folder>`
+you have to make a file with the name  `.env` and
+into the file to write the below
+
+```dotenv
+VSF_NUXT_APP_ENV=development
+VSF_NUXT_APP_PORT=3050
+VSF_NUXT_APP_HOST=localhost
+
+VSF_STORE_URL=http://localhost:3050/
+VSF_MIDDLEWARE_URL=http://localhost:3050/api/
+VSF_SSR_MIDDLEWARE_URL=http://localhost:3050/api/
+
+VSF_MAGENTO_BASE_URL=https://evia.pyconero.gr
+VSF_MAGENTO_GRAPHQL_URL=https://evia.pyconero.gr/graphql
+
+VSF_MAGENTO_EXTERNAL_CHECKOUT_ENABLED=false
+VSF_MAGENTO_EXTERNAL_CHECKOUT_URL=https://yourdomain.gr
+VSF_MAGENTO_EXTERNAL_CHECKOUT_SYNC_PATH=/vue/cart/sync
+
+VSF_IMAGE_PROVIDER=static
+VSF_IMAGE_PROVIDER_BASE_URL=https://evia.pyconero.gr/image/upload/
+VSF_IMAGE_PROVIDER_DOMAIN=https://evia.pyconero.gr
+
+
+VSF_REDIS_ENABLED=false
+VSF_REDIS_HOST=127.0.0.1
+VSF_REDIS_PORT=6379
+VSF_REDIS_KEY_PREFIX=
+VSF_REDIS_CACHE_INVALIDATE_URL=/cache-invalidate
+
+VSF_RECAPTCHA_ENABLED=false
+VSF_RECAPTCHA_SITE_KEY=
+VSF_RECAPTCHA_SECRET_KEY=
+VSF_RECAPTCHA_HIDE_BADGE=
+VSF_RECAPTCHA_SIZE=invisible
+VSF_RECAPTCHA_MIN_SCORE=0.5
+VSF_RECAPTCHA_VERSION=3
+
+VSF_COOKIE_HTTP_ONLY=
+VSF_COOKIE_SECURE=
+VSF_COOKIE_SAME_SITE=
+VSF_COOKIE_PATH=
+
+NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
 #### install dependencies
 
 > npx yarn install
