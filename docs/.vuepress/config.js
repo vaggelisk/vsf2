@@ -86,6 +86,15 @@ module.exports = {
         ],
       },
       {
+        title: 'Advanced',
+        collapsable: true,
+        children: [
+          ['/advanced/loggedin-customer/duration', 'Logged-in Customer Duration'],
+          ['/advanced/makingVuexVariable', 'Making a vuex variable'],
+          ['/advanced/redisCacheSetup/changingPrices', 'Redis Cache (quite advanced)'],
+        ],
+      },
+      {
         title: 'Learn Vue Storefront',
         collapsable: true,
         children: [
