@@ -86,6 +86,14 @@ module.exports = {
         ],
       },
       {
+        title: 'After Starting Point',
+        collapsable: true,
+        children: [
+          ['/after-starting-point/locales-languages/install-config', 'Installation And Configuration'],
+          ['after-starting-point/locales-languages/translate-more-of-the-app', 'More translations of the App'],
+        ],
+      },
+      {
         title: 'Advanced',
         collapsable: true,
         children: [

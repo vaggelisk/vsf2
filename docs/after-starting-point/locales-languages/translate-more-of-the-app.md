@@ -27,4 +27,27 @@ If we change, the value of this key in something like that
 έχουμε πραγματοποιήσει μια μετάφραση.
 
 
-## 2.
+## 2. having to add translation function
+
+If you go to the Category Page, in the left sidebar are the filters.
+
+You can see, if scroll down a bit, that the Size is translated, but the Color is not.
+
+The first one is translated because at the file
+`modules/catalog/category/components/filters/renderer/CheckboxType.vue`
+in the `line 6` from
+
+>   :title="filter.label"
+
+is modified to
+
+>   :title="$t(filter.label)".
+
+
+If you make the same and in the other components which consist of
+the Filters, then you will have translations in all the Filters part
+of the App
+
+You can start with
+`modules/catalog/category/components/filters/renderer/SwatchColorType.vue`
+
