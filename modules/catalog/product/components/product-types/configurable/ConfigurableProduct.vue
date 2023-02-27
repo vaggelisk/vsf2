@@ -84,7 +84,7 @@
             class="product__colors"
           >
             <p class="product__color-label">
-              {{ option.label }}:
+              {{ $t(option.label) }}:
             </p>
             <SfColor
               v-for="color in option.values"
@@ -108,7 +108,7 @@
             v-else
             :key="option.uid"
             :value="productConfiguration[option.attribute_uid]"
-            :label="option.label"
+            :label="$t(option.label)"
             class="sf-select--underlined product__select-size"
             :required="true"
             @input="
