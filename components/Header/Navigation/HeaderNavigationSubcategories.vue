@@ -49,23 +49,34 @@
         </SfList>
       </div>
     </div>
+    <div class="">
+      <SfImage alt="menu"
+               :src="addBasePath('/icons/twitter.svg')"
+               width="128"
+               height="128"
+      />
+
+    </div>
   </div>
 </template>
 <script lang="ts">
 import {
-  SfLink, SfList,
+  SfLink, SfList, SfImage,
 } from '@storefront-ui/vue';
 import { defineComponent, ref, onMounted } from '@nuxtjs/composition-api';
 import type { PropType } from '@nuxtjs/composition-api';
 import type { CategoryTree } from '~/modules/GraphQL/types';
 import { useUiHelpers } from '~/composables';
 import type { ComponentTemplateRef } from '~/types/componentTemplateRef';
+import { addBasePath } from '~/helpers/addBasePath';
+
 
 export default defineComponent({
   name: 'HeaderNavigationSubcategories',
   components: {
     SfLink,
     SfList,
+    SfImage
   },
   props: {
     currentCategory: {
@@ -171,6 +182,7 @@ export default defineComponent({
       navDown,
       navUp,
       setupNav,
+      addBasePath,
       lvl1CatRefs,
       lvl2CatRefs,
     };
