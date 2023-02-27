@@ -142,28 +142,29 @@ export default async () => {
     ],
     i18n: {
       country: 'US',
+      useNuxtI18nConfig: false,
       baseUrl: process.env.VSF_STORE_URL,
       strategy: 'prefix',
       locales: [
         {
-          code: 'default',
+          code: 'en',
           file: 'en.js',
           iso: 'en_US',
           defaultCurrency: 'EUR',
         },
-        // {
-        //   code: 'german',
-        //   file: 'de.js',
-        //   iso: 'de_DE',
-        //   defaultCurrency: 'EUR',
-        // },
+        {
+          code: 'el',
+          file: 'el.js',
+          iso: 'el_GR',
+          defaultCurrency: 'EUR',
+        },
       ],
-      defaultLocale: 'default',
+      defaultLocale: 'el',
       lazy: true,
       seo: true,
       langDir: 'lang/',
       vueI18n: {
-        fallbackLocale: 'default',
+        fallbackLocale: 'el',
         numberFormats: {
           default: {
             currency: {
@@ -172,13 +173,6 @@ export default async () => {
               currencyDisplay: 'symbol',
             },
           },
-          // german: {
-          //   currency: {
-          //     style: 'currency',
-          //     currency: 'EUR',
-          //     currencyDisplay: 'symbol',
-          //   },
-          // },
         },
       },
       detectBrowserLanguage: false,

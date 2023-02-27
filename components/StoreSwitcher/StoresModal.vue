@@ -89,6 +89,7 @@ export default defineComponent({
     const availableStores = computed<AvailableStores>(() => stores.value ?? []);
 
     onMounted(() => {
+      console.log(  stores.value[0] )
       if (stores.value && stores.value?.length) return;
       loadStores();
     });
