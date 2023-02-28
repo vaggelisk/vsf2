@@ -142,7 +142,6 @@ export default async () => {
     ],
     i18n: {
       country: 'US',
-      useNuxtI18nConfig: false,
       baseUrl: process.env.VSF_STORE_URL,
       strategy: 'prefix',
       locales: [
