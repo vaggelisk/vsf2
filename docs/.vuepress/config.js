@@ -82,11 +82,13 @@ module.exports = {
           ['/starting-point/starting-webstorm-editor', 'Starting with Webstorm Editor'],
           ['/starting-point/starting-git', 'Starting with git'],
           ['/starting-point/setup-the-project-locally', 'Setup the Project locally'],
+          ['/starting-point/more-info', 'More info - Magento part'],
+          ['/starting-point/vsf-code-overview', 'VSF code overview'],
           ['/starting-point/contributing-via-git', 'Contributing to the collective Project (git)'],
         ],
       },
       {
-        title: 'After Starting Point',
+        title: 'Locales-Translations',
         collapsable: true,
         children: [
           ['/after-starting-point/locales-languages/install-config', 'Installation And Configuration'],

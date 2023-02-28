@@ -3,7 +3,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magento_Logo.svg/2560px-Magento_Logo.svg.png" height="80px"/>
 </div>
 
-Just another try to live differently from what our repressors are planning for us
+## Just another try to live differently from what our repressors are planning for us
 
 -----------
 
@@ -20,3 +20,8 @@ There is an occasion you should type also
 
 But for sure you have to open https://docs.evia.pyconero.gr/
 on a new private browser, cause cache has to clean
+
+## For Deploying of the App
+
+For Deploying of the App in the Dev Server look the local file
+`READMEforDeploying.md`

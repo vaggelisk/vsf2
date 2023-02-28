@@ -41,6 +41,8 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
+READMEforDeploying.md
+
 # Optional npm cache directory
 .npm
 
