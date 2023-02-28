@@ -27,7 +27,7 @@ import {
 } from '@nuxtjs/composition-api';
 import LazyHydrate from 'vue-lazy-hydration';
 import {useCache, CacheTagPrefix} from '@vue-storefront/cache';
-import {SfBanner, SfBannerGrid, SfHeading, SfLoader} from '@storefront-ui/vue';
+import { SfHeading, SfLoader } from '@storefront-ui/vue';
 import {CmsPage} from '~/modules/GraphQL/types';
 import HeroSection from '~/components/HeroSection.vue';
 import {getMetaInfo} from '~/helpers/getMetaInfo';
@@ -42,12 +42,8 @@ export default defineComponent({
     HeroSection,
     LazyHydrate,
     LoadWhenVisible,
-    SfBanner,
     SfLoader,
     SfHeading,
-    SfBannerGrid,
-    CallToAction: () => import(/* webpackPrefetch: true */ '~/components/CallToAction.vue'),
-    InstagramFeed: () => import(/* webpackPrefetch: true */ '~/components/InstagramFeed.vue'),
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup() {
@@ -63,18 +59,6 @@ export default defineComponent({
 
     const page = ref < CmsPage | null > (null);
 
-    const callToAction = ref({
-      title: app.i18n.t('Subscribe to Newsletters'),
-      description: app.i18n.t('Be aware of upcoming sales and events. Receive gifts and special offers!'),
-      buttonText: app.i18n.t('Subscribe'),
-      imageSrc: '/homepage/newsletter.webp',
-      imageWidth: isDesktop ? 1240 : 400,
-      imageHeight: isDesktop ? 202 : 200,
-      imageConfig: {
-        fit: 'cover',
-        format: 'webp',
-      },
-    });
 
     useFetch(async () => {
       page.value = await loadPage({identifier: 'about-us'});
@@ -83,15 +67,12 @@ export default defineComponent({
 
     onMounted(() => {
       addTags([{prefix: CacheTagPrefix.View, value: 'about-us'}]);
-      console.log('vaggelis')
-      console.log(JSON.stringify(page.value))
     });
 
     // @ts-ignore
     return {
       loading,
       loadPage,
-      callToAction,
       page,
     };
   },
